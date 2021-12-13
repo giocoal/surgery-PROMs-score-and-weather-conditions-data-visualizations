@@ -1,0 +1,1726 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20213.21.1112.1434                               -->
+<workbook source-build='2021.3.4 (20213.21.1112.1434)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='mental_score_SF12' inline='true' name='federated.1dd0q3x1uoi3mm186osrv1kziojv' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='mental_score_SF12' name='textscan.0os7sb71gtdoxd1fv85550nwhuvn'>
+            <connection class='textscan' directory='C:/Users/Giorgio/OneDrive - Universita degli Studi di Milano-Bicocca/Laurea Magistrale - Data Science/directory_progetti/DataVisualization2021_progetto' filename='mental_score_SF12.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.0os7sb71gtdoxd1fv85550nwhuvn' name='mental_score_SF12.csv' table='[mental_score_SF12#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='real' name='score_preop' ordinal='0' />
+            <column datatype='real' name='score_postop' ordinal='1' />
+            <column datatype='real' name='score_diff' ordinal='2' />
+            <column datatype='string' name='condizioni_meteo' ordinal='3' />
+            <column datatype='string' name='sesso' ordinal='4' />
+            <column datatype='integer' name='anni_ricovero' ordinal='5' />
+            <column datatype='real' name='temperatura_media' ordinal='6' />
+            <column datatype='real' name='umidita_media' ordinal='7' />
+            <column datatype='boolean' name='HI &gt; 27' ordinal='8' />
+            <column datatype='boolean' name='natural_light' ordinal='9' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.0os7sb71gtdoxd1fv85550nwhuvn' name='mental_score_SF12.csv' table='[mental_score_SF12#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='real' name='score_preop' ordinal='0' />
+            <column datatype='real' name='score_postop' ordinal='1' />
+            <column datatype='real' name='score_diff' ordinal='2' />
+            <column datatype='string' name='condizioni_meteo' ordinal='3' />
+            <column datatype='string' name='sesso' ordinal='4' />
+            <column datatype='integer' name='anni_ricovero' ordinal='5' />
+            <column datatype='real' name='temperatura_media' ordinal='6' />
+            <column datatype='real' name='umidita_media' ordinal='7' />
+            <column datatype='boolean' name='HI &gt; 27' ordinal='8' />
+            <column datatype='boolean' name='natural_light' ordinal='9' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[mental_score_SF12.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>score_preop</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[score_preop]</local-name>
+            <parent-name>[mental_score_SF12.csv]</parent-name>
+            <remote-alias>score_preop</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mental_score_SF12.csv_4BE42957CE734A8BBDB8230B78B5A39D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>score_postop</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[score_postop]</local-name>
+            <parent-name>[mental_score_SF12.csv]</parent-name>
+            <remote-alias>score_postop</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mental_score_SF12.csv_4BE42957CE734A8BBDB8230B78B5A39D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>score_diff</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[score_diff]</local-name>
+            <parent-name>[mental_score_SF12.csv]</parent-name>
+            <remote-alias>score_diff</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mental_score_SF12.csv_4BE42957CE734A8BBDB8230B78B5A39D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>condizioni_meteo</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[condizioni_meteo]</local-name>
+            <parent-name>[mental_score_SF12.csv]</parent-name>
+            <remote-alias>condizioni_meteo</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mental_score_SF12.csv_4BE42957CE734A8BBDB8230B78B5A39D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sesso</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[sesso]</local-name>
+            <parent-name>[mental_score_SF12.csv]</parent-name>
+            <remote-alias>sesso</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mental_score_SF12.csv_4BE42957CE734A8BBDB8230B78B5A39D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>anni_ricovero</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[anni_ricovero]</local-name>
+            <parent-name>[mental_score_SF12.csv]</parent-name>
+            <remote-alias>anni_ricovero</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mental_score_SF12.csv_4BE42957CE734A8BBDB8230B78B5A39D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>temperatura_media</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[temperatura_media]</local-name>
+            <parent-name>[mental_score_SF12.csv]</parent-name>
+            <remote-alias>temperatura_media</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mental_score_SF12.csv_4BE42957CE734A8BBDB8230B78B5A39D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>umidita_media</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[umidita_media]</local-name>
+            <parent-name>[mental_score_SF12.csv]</parent-name>
+            <remote-alias>umidita_media</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mental_score_SF12.csv_4BE42957CE734A8BBDB8230B78B5A39D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>HI &gt; 27</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[HI &gt; 27]</local-name>
+            <parent-name>[mental_score_SF12.csv]</parent-name>
+            <remote-alias>HI &gt; 27</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mental_score_SF12.csv_4BE42957CE734A8BBDB8230B78B5A39D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>natural_light</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[natural_light]</local-name>
+            <parent-name>[mental_score_SF12.csv]</parent-name>
+            <remote-alias>natural_light</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mental_score_SF12.csv_4BE42957CE734A8BBDB8230B78B5A39D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Hi &gt; 27' datatype='boolean' name='[HI &gt; 27]' role='dimension' type='nominal' />
+      <_.fcp.ObjectModelTableType.true...column caption='mental_score_SF12.csv' datatype='table' name='[__tableau_internal_object_id__].[mental_score_SF12.csv_4BE42957CE734A8BBDB8230B78B5A39D]' role='measure' type='quantitative' />
+      <column caption='Anni Ricovero' datatype='integer' name='[anni_ricovero]' role='measure' type='quantitative' />
+      <column caption='Condizioni Meteo' datatype='string' name='[condizioni_meteo]' role='dimension' type='nominal' />
+      <column caption='Natural Light' datatype='boolean' name='[natural_light]' role='dimension' type='nominal' />
+      <column caption='Score Diff' datatype='real' name='[score_diff]' role='measure' type='quantitative' />
+      <column caption='Score Postop' datatype='real' name='[score_postop]' role='measure' type='quantitative' />
+      <column caption='Score Preop' datatype='real' name='[score_preop]' role='measure' type='quantitative' />
+      <column caption='Sesso' datatype='string' name='[sesso]' role='dimension' type='nominal' />
+      <column caption='Temperatura Media' datatype='real' name='[temperatura_media]' role='measure' type='quantitative' />
+      <column caption='Umidita Media' datatype='real' name='[umidita_media]' role='measure' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Italy&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='mental_score_SF12.csv' id='mental_score_SF12.csv_4BE42957CE734A8BBDB8230B78B5A39D'>
+            <properties context=''>
+              <relation connection='textscan.0os7sb71gtdoxd1fv85550nwhuvn' name='mental_score_SF12.csv' table='[mental_score_SF12#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='real' name='score_preop' ordinal='0' />
+                  <column datatype='real' name='score_postop' ordinal='1' />
+                  <column datatype='real' name='score_diff' ordinal='2' />
+                  <column datatype='string' name='condizioni_meteo' ordinal='3' />
+                  <column datatype='string' name='sesso' ordinal='4' />
+                  <column datatype='integer' name='anni_ricovero' ordinal='5' />
+                  <column datatype='real' name='temperatura_media' ordinal='6' />
+                  <column datatype='real' name='umidita_media' ordinal='7' />
+                  <column datatype='boolean' name='HI &gt; 27' ordinal='8' />
+                  <column datatype='boolean' name='natural_light' ordinal='9' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+    <datasource caption='dataset_normalizzato_con_differenze' inline='true' name='federated.15ikgrl0cicze2199zfef1qancuj' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='dataset_normalizzato_con_differenze' name='textscan.0mbc2s8119dyt51a6vg9307bfiuw'>
+            <connection class='textscan' directory='C:/Users/Giorgio/OneDrive - Universita degli Studi di Milano-Bicocca/Laurea Magistrale - Data Science/directory_progetti/DataVisualization2021_compitino' filename='dataset_normalizzato_con_differenze.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.0mbc2s8119dyt51a6vg9307bfiuw' name='dataset_normalizzato_con_differenze.csv' table='[dataset_normalizzato_con_differenze#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='real' name='physical_score_preop' ordinal='0' />
+            <column datatype='real' name='physical_score_postop' ordinal='1' />
+            <column datatype='real' name='physical_score_diff' ordinal='2' />
+            <column datatype='real' name='mental_score_preop' ordinal='3' />
+            <column datatype='real' name='mental_score_postop' ordinal='4' />
+            <column datatype='real' name='mental_score_diff' ordinal='5' />
+            <column datatype='string' name='condizioni_meteo' ordinal='6' />
+            <column datatype='string' name='sesso' ordinal='7' />
+            <column datatype='integer' name='anni_ricovero' ordinal='8' />
+            <column datatype='real' name='temperatura_media' ordinal='9' />
+            <column datatype='real' name='umidita_media' ordinal='10' />
+            <column datatype='boolean' name='HI &gt; 27' ordinal='11' />
+            <column datatype='boolean' name='natural_light' ordinal='12' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.0mbc2s8119dyt51a6vg9307bfiuw' name='dataset_normalizzato_con_differenze.csv' table='[dataset_normalizzato_con_differenze#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='real' name='physical_score_preop' ordinal='0' />
+            <column datatype='real' name='physical_score_postop' ordinal='1' />
+            <column datatype='real' name='physical_score_diff' ordinal='2' />
+            <column datatype='real' name='mental_score_preop' ordinal='3' />
+            <column datatype='real' name='mental_score_postop' ordinal='4' />
+            <column datatype='real' name='mental_score_diff' ordinal='5' />
+            <column datatype='string' name='condizioni_meteo' ordinal='6' />
+            <column datatype='string' name='sesso' ordinal='7' />
+            <column datatype='integer' name='anni_ricovero' ordinal='8' />
+            <column datatype='real' name='temperatura_media' ordinal='9' />
+            <column datatype='real' name='umidita_media' ordinal='10' />
+            <column datatype='boolean' name='HI &gt; 27' ordinal='11' />
+            <column datatype='boolean' name='natural_light' ordinal='12' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[dataset_normalizzato_con_differenze.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>physical_score_preop</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[physical_score_preop]</local-name>
+            <parent-name>[dataset_normalizzato_con_differenze.csv]</parent-name>
+            <remote-alias>physical_score_preop</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dataset_normalizzato_con_differenze.csv_E9254AFBB3D4407AAFEB4BA417B885BD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>physical_score_postop</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[physical_score_postop]</local-name>
+            <parent-name>[dataset_normalizzato_con_differenze.csv]</parent-name>
+            <remote-alias>physical_score_postop</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dataset_normalizzato_con_differenze.csv_E9254AFBB3D4407AAFEB4BA417B885BD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>physical_score_diff</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[physical_score_diff]</local-name>
+            <parent-name>[dataset_normalizzato_con_differenze.csv]</parent-name>
+            <remote-alias>physical_score_diff</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dataset_normalizzato_con_differenze.csv_E9254AFBB3D4407AAFEB4BA417B885BD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>mental_score_preop</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[mental_score_preop]</local-name>
+            <parent-name>[dataset_normalizzato_con_differenze.csv]</parent-name>
+            <remote-alias>mental_score_preop</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dataset_normalizzato_con_differenze.csv_E9254AFBB3D4407AAFEB4BA417B885BD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>mental_score_postop</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[mental_score_postop]</local-name>
+            <parent-name>[dataset_normalizzato_con_differenze.csv]</parent-name>
+            <remote-alias>mental_score_postop</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dataset_normalizzato_con_differenze.csv_E9254AFBB3D4407AAFEB4BA417B885BD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>mental_score_diff</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[mental_score_diff]</local-name>
+            <parent-name>[dataset_normalizzato_con_differenze.csv]</parent-name>
+            <remote-alias>mental_score_diff</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dataset_normalizzato_con_differenze.csv_E9254AFBB3D4407AAFEB4BA417B885BD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>condizioni_meteo</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[condizioni_meteo]</local-name>
+            <parent-name>[dataset_normalizzato_con_differenze.csv]</parent-name>
+            <remote-alias>condizioni_meteo</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dataset_normalizzato_con_differenze.csv_E9254AFBB3D4407AAFEB4BA417B885BD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sesso</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[sesso]</local-name>
+            <parent-name>[dataset_normalizzato_con_differenze.csv]</parent-name>
+            <remote-alias>sesso</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dataset_normalizzato_con_differenze.csv_E9254AFBB3D4407AAFEB4BA417B885BD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>anni_ricovero</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[anni_ricovero]</local-name>
+            <parent-name>[dataset_normalizzato_con_differenze.csv]</parent-name>
+            <remote-alias>anni_ricovero</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dataset_normalizzato_con_differenze.csv_E9254AFBB3D4407AAFEB4BA417B885BD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>temperatura_media</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[temperatura_media]</local-name>
+            <parent-name>[dataset_normalizzato_con_differenze.csv]</parent-name>
+            <remote-alias>temperatura_media</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dataset_normalizzato_con_differenze.csv_E9254AFBB3D4407AAFEB4BA417B885BD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>umidita_media</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[umidita_media]</local-name>
+            <parent-name>[dataset_normalizzato_con_differenze.csv]</parent-name>
+            <remote-alias>umidita_media</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dataset_normalizzato_con_differenze.csv_E9254AFBB3D4407AAFEB4BA417B885BD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>HI &gt; 27</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[HI &gt; 27]</local-name>
+            <parent-name>[dataset_normalizzato_con_differenze.csv]</parent-name>
+            <remote-alias>HI &gt; 27</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dataset_normalizzato_con_differenze.csv_E9254AFBB3D4407AAFEB4BA417B885BD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>natural_light</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[natural_light]</local-name>
+            <parent-name>[dataset_normalizzato_con_differenze.csv]</parent-name>
+            <remote-alias>natural_light</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dataset_normalizzato_con_differenze.csv_E9254AFBB3D4407AAFEB4BA417B885BD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Hi &gt; 27' datatype='boolean' name='[HI &gt; 27]' role='dimension' type='nominal' />
+      <_.fcp.ObjectModelTableType.true...column caption='dataset_normalizzato_con_differenze.csv' datatype='table' name='[__tableau_internal_object_id__].[dataset_normalizzato_con_differenze.csv_E9254AFBB3D4407AAFEB4BA417B885BD]' role='measure' type='quantitative' />
+      <column caption='Anni Ricovero' datatype='integer' name='[anni_ricovero]' role='measure' type='quantitative' />
+      <column caption='Condizioni Meteo' datatype='string' name='[condizioni_meteo]' role='dimension' type='nominal' />
+      <column caption='Mental Score Diff' datatype='real' name='[mental_score_diff]' role='measure' type='quantitative' />
+      <column caption='Mental Score Postop' datatype='real' name='[mental_score_postop]' role='measure' type='quantitative' />
+      <column caption='Mental Score Preop' datatype='real' name='[mental_score_preop]' role='measure' type='quantitative' />
+      <column caption='Natural Light' datatype='boolean' name='[natural_light]' role='dimension' type='nominal' />
+      <column caption='Physical Score Diff' datatype='real' name='[physical_score_diff]' role='measure' type='quantitative' />
+      <column caption='Physical Score Postop' datatype='real' name='[physical_score_postop]' role='measure' type='quantitative' />
+      <column caption='Physical Score Preop' datatype='real' name='[physical_score_preop]' role='measure' type='quantitative' />
+      <column caption='Sesso' datatype='string' name='[sesso]' role='dimension' type='nominal' />
+      <column caption='Temperatura Media' datatype='real' name='[temperatura_media]' role='measure' type='quantitative' />
+      <column caption='Umidita Media' datatype='real' name='[umidita_media]' role='measure' type='quantitative' />
+      <column-instance column='[HI &gt; 27]' derivation='None' name='[none:HI &gt; 27:nk]' pivot='key' type='nominal' />
+      <column-instance column='[natural_light]' derivation='None' name='[none:natural_light:nk]' pivot='key' type='nominal' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:HI &gt; 27:nk]' type='palette'>
+            <map to='#e15759'>
+              <bucket>true</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>false</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:natural_light:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>false</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>true</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Italy&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='dataset_normalizzato_con_differenze.csv' id='dataset_normalizzato_con_differenze.csv_E9254AFBB3D4407AAFEB4BA417B885BD'>
+            <properties context=''>
+              <relation connection='textscan.0mbc2s8119dyt51a6vg9307bfiuw' name='dataset_normalizzato_con_differenze.csv' table='[dataset_normalizzato_con_differenze#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='real' name='physical_score_preop' ordinal='0' />
+                  <column datatype='real' name='physical_score_postop' ordinal='1' />
+                  <column datatype='real' name='physical_score_diff' ordinal='2' />
+                  <column datatype='real' name='mental_score_preop' ordinal='3' />
+                  <column datatype='real' name='mental_score_postop' ordinal='4' />
+                  <column datatype='real' name='mental_score_diff' ordinal='5' />
+                  <column datatype='string' name='condizioni_meteo' ordinal='6' />
+                  <column datatype='string' name='sesso' ordinal='7' />
+                  <column datatype='integer' name='anni_ricovero' ordinal='8' />
+                  <column datatype='real' name='temperatura_media' ordinal='9' />
+                  <column datatype='real' name='umidita_media' ordinal='10' />
+                  <column datatype='boolean' name='HI &gt; 27' ordinal='11' />
+                  <column datatype='boolean' name='natural_light' ordinal='12' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+    <datasource caption='physical_score_SF12' inline='true' name='federated.12q7gcs02gkzi2102swje13xxlzc' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='physical_score_SF12' name='textscan.1sneeqm0c44clw1ephvw01gifxlh'>
+            <connection class='textscan' directory='C:/Users/Giorgio/OneDrive - Universita degli Studi di Milano-Bicocca/Laurea Magistrale - Data Science/directory_progetti/DataVisualization2021_compitino' filename='physical_score_SF12.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.1sneeqm0c44clw1ephvw01gifxlh' name='physical_score_SF12.csv' table='[physical_score_SF12#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='real' name='score_preop' ordinal='0' />
+            <column datatype='real' name='score_postop' ordinal='1' />
+            <column datatype='real' name='score_diff' ordinal='2' />
+            <column datatype='string' name='condizioni_meteo' ordinal='3' />
+            <column datatype='string' name='sesso' ordinal='4' />
+            <column datatype='integer' name='anni_ricovero' ordinal='5' />
+            <column datatype='real' name='temperatura_media' ordinal='6' />
+            <column datatype='real' name='umidita_media' ordinal='7' />
+            <column datatype='boolean' name='HI &gt; 27' ordinal='8' />
+            <column datatype='boolean' name='natural_light' ordinal='9' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.1sneeqm0c44clw1ephvw01gifxlh' name='physical_score_SF12.csv' table='[physical_score_SF12#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='real' name='score_preop' ordinal='0' />
+            <column datatype='real' name='score_postop' ordinal='1' />
+            <column datatype='real' name='score_diff' ordinal='2' />
+            <column datatype='string' name='condizioni_meteo' ordinal='3' />
+            <column datatype='string' name='sesso' ordinal='4' />
+            <column datatype='integer' name='anni_ricovero' ordinal='5' />
+            <column datatype='real' name='temperatura_media' ordinal='6' />
+            <column datatype='real' name='umidita_media' ordinal='7' />
+            <column datatype='boolean' name='HI &gt; 27' ordinal='8' />
+            <column datatype='boolean' name='natural_light' ordinal='9' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[physical_score_SF12.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>score_preop</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[score_preop]</local-name>
+            <parent-name>[physical_score_SF12.csv]</parent-name>
+            <remote-alias>score_preop</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[physical_score_SF12.csv_F745C451A4A545A98C2367C2F475776C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>score_postop</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[score_postop]</local-name>
+            <parent-name>[physical_score_SF12.csv]</parent-name>
+            <remote-alias>score_postop</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[physical_score_SF12.csv_F745C451A4A545A98C2367C2F475776C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>score_diff</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[score_diff]</local-name>
+            <parent-name>[physical_score_SF12.csv]</parent-name>
+            <remote-alias>score_diff</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[physical_score_SF12.csv_F745C451A4A545A98C2367C2F475776C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>condizioni_meteo</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[condizioni_meteo]</local-name>
+            <parent-name>[physical_score_SF12.csv]</parent-name>
+            <remote-alias>condizioni_meteo</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[physical_score_SF12.csv_F745C451A4A545A98C2367C2F475776C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sesso</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[sesso]</local-name>
+            <parent-name>[physical_score_SF12.csv]</parent-name>
+            <remote-alias>sesso</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[physical_score_SF12.csv_F745C451A4A545A98C2367C2F475776C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>anni_ricovero</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[anni_ricovero]</local-name>
+            <parent-name>[physical_score_SF12.csv]</parent-name>
+            <remote-alias>anni_ricovero</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[physical_score_SF12.csv_F745C451A4A545A98C2367C2F475776C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>temperatura_media</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[temperatura_media]</local-name>
+            <parent-name>[physical_score_SF12.csv]</parent-name>
+            <remote-alias>temperatura_media</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[physical_score_SF12.csv_F745C451A4A545A98C2367C2F475776C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>umidita_media</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[umidita_media]</local-name>
+            <parent-name>[physical_score_SF12.csv]</parent-name>
+            <remote-alias>umidita_media</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[physical_score_SF12.csv_F745C451A4A545A98C2367C2F475776C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>HI &gt; 27</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[HI &gt; 27]</local-name>
+            <parent-name>[physical_score_SF12.csv]</parent-name>
+            <remote-alias>HI &gt; 27</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[physical_score_SF12.csv_F745C451A4A545A98C2367C2F475776C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>natural_light</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[natural_light]</local-name>
+            <parent-name>[physical_score_SF12.csv]</parent-name>
+            <remote-alias>natural_light</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[physical_score_SF12.csv_F745C451A4A545A98C2367C2F475776C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Hi &gt; 27' datatype='boolean' name='[HI &gt; 27]' role='dimension' type='nominal' />
+      <_.fcp.ObjectModelTableType.true...column caption='physical_score_SF12.csv' datatype='table' name='[__tableau_internal_object_id__].[physical_score_SF12.csv_F745C451A4A545A98C2367C2F475776C]' role='measure' type='quantitative' />
+      <column caption='Anni Ricovero' datatype='integer' name='[anni_ricovero]' role='measure' type='quantitative' />
+      <column caption='Condizioni Meteo' datatype='string' name='[condizioni_meteo]' role='dimension' type='nominal' />
+      <column caption='Natural Light' datatype='boolean' name='[natural_light]' role='dimension' type='nominal' />
+      <column caption='Score Diff' datatype='real' name='[score_diff]' role='measure' type='quantitative' />
+      <column caption='Score Postop' datatype='real' name='[score_postop]' role='measure' type='quantitative' />
+      <column caption='Score Preop' datatype='real' name='[score_preop]' role='measure' type='quantitative' />
+      <column caption='Sesso' datatype='string' name='[sesso]' role='dimension' type='nominal' />
+      <column caption='Temperatura Media' datatype='real' name='[temperatura_media]' role='measure' type='quantitative' />
+      <column caption='Umidita Media' datatype='real' name='[umidita_media]' role='measure' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Italy&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='physical_score_SF12.csv' id='physical_score_SF12.csv_F745C451A4A545A98C2367C2F475776C'>
+            <properties context=''>
+              <relation connection='textscan.1sneeqm0c44clw1ephvw01gifxlh' name='physical_score_SF12.csv' table='[physical_score_SF12#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='real' name='score_preop' ordinal='0' />
+                  <column datatype='real' name='score_postop' ordinal='1' />
+                  <column datatype='real' name='score_diff' ordinal='2' />
+                  <column datatype='string' name='condizioni_meteo' ordinal='3' />
+                  <column datatype='string' name='sesso' ordinal='4' />
+                  <column datatype='integer' name='anni_ricovero' ordinal='5' />
+                  <column datatype='real' name='temperatura_media' ordinal='6' />
+                  <column datatype='real' name='umidita_media' ordinal='7' />
+                  <column datatype='boolean' name='HI &gt; 27' ordinal='8' />
+                  <column datatype='boolean' name='natural_light' ordinal='9' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+    <datasource caption='compitino_dataviz_2021_2022' inline='true' name='federated.1e1uere0e8k21g167pviw01222ft' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='compitino_dataviz_2021_2022' name='textscan.08x34871uw5f1a1djneze0uiagqr'>
+            <connection class='textscan' directory='C:/Users/Giorgio/OneDrive - Universita degli Studi di Milano-Bicocca/Laurea Magistrale - Data Science/directory_progetti/DataVisualization2021_compitino' filename='compitino_dataviz_2021_2022.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.08x34871uw5f1a1djneze0uiagqr' name='compitino_dataviz_2021_2022.csv' table='[compitino_dataviz_2021_2022#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='nome_modulistica' ordinal='0' />
+            <column datatype='real' name='score_preop' ordinal='1' />
+            <column datatype='real' name='score_postop' ordinal='2' />
+            <column datatype='string' name='condizioni_meteo' ordinal='3' />
+            <column datatype='string' name='sesso' ordinal='4' />
+            <column datatype='integer' name='anni_ricovero' ordinal='5' />
+            <column datatype='real' name='temperatura_media' ordinal='6' />
+            <column datatype='real' name='umidita_media' ordinal='7' />
+            <column datatype='boolean' name='HI &gt; 27' ordinal='8' />
+            <column datatype='boolean' name='natural_light' ordinal='9' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.08x34871uw5f1a1djneze0uiagqr' name='compitino_dataviz_2021_2022.csv' table='[compitino_dataviz_2021_2022#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='nome_modulistica' ordinal='0' />
+            <column datatype='real' name='score_preop' ordinal='1' />
+            <column datatype='real' name='score_postop' ordinal='2' />
+            <column datatype='string' name='condizioni_meteo' ordinal='3' />
+            <column datatype='string' name='sesso' ordinal='4' />
+            <column datatype='integer' name='anni_ricovero' ordinal='5' />
+            <column datatype='real' name='temperatura_media' ordinal='6' />
+            <column datatype='real' name='umidita_media' ordinal='7' />
+            <column datatype='boolean' name='HI &gt; 27' ordinal='8' />
+            <column datatype='boolean' name='natural_light' ordinal='9' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[compitino_dataviz_2021_2022.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>nome_modulistica</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[nome_modulistica]</local-name>
+            <parent-name>[compitino_dataviz_2021_2022.csv]</parent-name>
+            <remote-alias>nome_modulistica</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[compitino_dataviz_2021_2022.csv_81988439151347C1906ED3D3EBE28334]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>score_preop</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[score_preop]</local-name>
+            <parent-name>[compitino_dataviz_2021_2022.csv]</parent-name>
+            <remote-alias>score_preop</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[compitino_dataviz_2021_2022.csv_81988439151347C1906ED3D3EBE28334]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>score_postop</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[score_postop]</local-name>
+            <parent-name>[compitino_dataviz_2021_2022.csv]</parent-name>
+            <remote-alias>score_postop</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[compitino_dataviz_2021_2022.csv_81988439151347C1906ED3D3EBE28334]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>condizioni_meteo</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[condizioni_meteo]</local-name>
+            <parent-name>[compitino_dataviz_2021_2022.csv]</parent-name>
+            <remote-alias>condizioni_meteo</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[compitino_dataviz_2021_2022.csv_81988439151347C1906ED3D3EBE28334]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sesso</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[sesso]</local-name>
+            <parent-name>[compitino_dataviz_2021_2022.csv]</parent-name>
+            <remote-alias>sesso</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[compitino_dataviz_2021_2022.csv_81988439151347C1906ED3D3EBE28334]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>anni_ricovero</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[anni_ricovero]</local-name>
+            <parent-name>[compitino_dataviz_2021_2022.csv]</parent-name>
+            <remote-alias>anni_ricovero</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[compitino_dataviz_2021_2022.csv_81988439151347C1906ED3D3EBE28334]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>temperatura_media</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[temperatura_media]</local-name>
+            <parent-name>[compitino_dataviz_2021_2022.csv]</parent-name>
+            <remote-alias>temperatura_media</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[compitino_dataviz_2021_2022.csv_81988439151347C1906ED3D3EBE28334]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>umidita_media</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[umidita_media]</local-name>
+            <parent-name>[compitino_dataviz_2021_2022.csv]</parent-name>
+            <remote-alias>umidita_media</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[compitino_dataviz_2021_2022.csv_81988439151347C1906ED3D3EBE28334]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>HI &gt; 27</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[HI &gt; 27]</local-name>
+            <parent-name>[compitino_dataviz_2021_2022.csv]</parent-name>
+            <remote-alias>HI &gt; 27</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[compitino_dataviz_2021_2022.csv_81988439151347C1906ED3D3EBE28334]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>natural_light</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[natural_light]</local-name>
+            <parent-name>[compitino_dataviz_2021_2022.csv]</parent-name>
+            <remote-alias>natural_light</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[compitino_dataviz_2021_2022.csv_81988439151347C1906ED3D3EBE28334]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Hi &gt; 27' datatype='boolean' name='[HI &gt; 27]' role='dimension' type='nominal' />
+      <column aggregation='None' datatype='integer' name='[Score Postop (bin)]' role='dimension' type='quantitative'>
+        <calculation class='bin' decimals='0' formula='[score_postop]' peg='0' size='1.4' />
+      </column>
+      <_.fcp.ObjectModelTableType.true...column caption='compitino_dataviz_2021_2022.csv' datatype='table' name='[__tableau_internal_object_id__].[compitino_dataviz_2021_2022.csv_81988439151347C1906ED3D3EBE28334]' role='measure' type='quantitative' />
+      <column caption='Anni Ricovero' datatype='integer' name='[anni_ricovero]' role='measure' type='ordinal' />
+      <column caption='Condizioni Meteo' datatype='string' name='[condizioni_meteo]' role='dimension' type='nominal' />
+      <column caption='Natural Light' datatype='boolean' name='[natural_light]' role='dimension' type='nominal' />
+      <column caption='Nome Modulistica' datatype='string' name='[nome_modulistica]' role='dimension' type='nominal' />
+      <column caption='Score Postop' datatype='real' name='[score_postop]' role='measure' type='quantitative' />
+      <column caption='Score Preop' datatype='real' name='[score_preop]' role='measure' type='quantitative' />
+      <column caption='Sesso' datatype='string' name='[sesso]' role='dimension' type='nominal' />
+      <column caption='Temperatura Media' datatype='real' name='[temperatura_media]' role='measure' type='quantitative' />
+      <column caption='Umidita Media' datatype='real' name='[umidita_media]' role='measure' type='quantitative' />
+      <column-instance column='[score_postop]' derivation='Avg' name='[avg:score_postop:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[score_postop]' derivation='Count' name='[cnt:score_postop:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[score_postop]' derivation='Median' name='[med:score_postop:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[score_postop]' derivation='None' name='[none:score_postop:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[umidita_media]' derivation='None' name='[none:umidita_media:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[score_postop]' derivation='Stdev' name='[std:score_postop:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[score_postop]' derivation='StdevP' name='[stp:score_postop:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[score_postop]' derivation='Sum' name='[sum:score_postop:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[umidita_media]' derivation='Sum' name='[sum:umidita_media:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[score_postop]' derivation='Var' name='[var:score_postop:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[score_postop]' derivation='VarP' name='[vrp:score_postop:qk]' pivot='key' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.1e1uere0e8k21g167pviw01222ft].[avg:score_postop:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.1e1uere0e8k21g167pviw01222ft].[cnt:score_postop:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.1e1uere0e8k21g167pviw01222ft].[med:score_postop:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.1e1uere0e8k21g167pviw01222ft].[none:score_postop:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.1e1uere0e8k21g167pviw01222ft].[std:score_postop:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.1e1uere0e8k21g167pviw01222ft].[stp:score_postop:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.1e1uere0e8k21g167pviw01222ft].[sum:score_postop:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.1e1uere0e8k21g167pviw01222ft].[var:score_postop:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.1e1uere0e8k21g167pviw01222ft].[vrp:score_postop:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.1e1uere0e8k21g167pviw01222ft]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.1e1uere0e8k21g167pviw01222ft].[none:umidita_media:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.1e1uere0e8k21g167pviw01222ft].[sum:umidita_media:qk]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Italy&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='compitino_dataviz_2021_2022.csv' id='compitino_dataviz_2021_2022.csv_81988439151347C1906ED3D3EBE28334'>
+            <properties context=''>
+              <relation connection='textscan.08x34871uw5f1a1djneze0uiagqr' name='compitino_dataviz_2021_2022.csv' table='[compitino_dataviz_2021_2022#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='string' name='nome_modulistica' ordinal='0' />
+                  <column datatype='real' name='score_preop' ordinal='1' />
+                  <column datatype='real' name='score_postop' ordinal='2' />
+                  <column datatype='string' name='condizioni_meteo' ordinal='3' />
+                  <column datatype='string' name='sesso' ordinal='4' />
+                  <column datatype='integer' name='anni_ricovero' ordinal='5' />
+                  <column datatype='real' name='temperatura_media' ordinal='6' />
+                  <column datatype='real' name='umidita_media' ordinal='7' />
+                  <column datatype='boolean' name='HI &gt; 27' ordinal='8' />
+                  <column datatype='boolean' name='natural_light' ordinal='9' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='physical_score_SF12' name='federated.12q7gcs02gkzi2102swje13xxlzc' />
+          </datasources>
+          <datasource-dependencies datasource='federated.12q7gcs02gkzi2102swje13xxlzc'>
+            <column-instance column='[score_postop]' derivation='Avg' name='[avg:score_postop:qk]' pivot='key' type='quantitative' />
+            <column caption='Condizioni Meteo' datatype='string' name='[condizioni_meteo]' role='dimension' type='nominal' />
+            <column-instance column='[condizioni_meteo]' derivation='None' name='[none:condizioni_meteo:nk]' pivot='key' type='nominal' />
+            <column caption='Score Postop' datatype='real' name='[score_postop]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='refline'>
+            <format attr='stroke-color' id='refline0' value='#000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <size column='[federated.12q7gcs02gkzi2102swje13xxlzc].[avg:score_postop:qk]' />
+              <text column='[federated.12q7gcs02gkzi2102swje13xxlzc].[none:condizioni_meteo:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{0F8B1BDA-21EC-41BC-8FB0-EA8A03C7057F}' />
+    </worksheet>
+    <worksheet name='Sheet 2'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='physical_score_SF12' name='federated.12q7gcs02gkzi2102swje13xxlzc' />
+          </datasources>
+          <datasource-dependencies datasource='federated.12q7gcs02gkzi2102swje13xxlzc'>
+            <column-instance column='[score_postop]' derivation='Avg' name='[avg:score_postop:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[sesso]' derivation='None' name='[none:sesso:nk]' pivot='key' type='nominal' />
+            <column-instance column='[umidita_media]' derivation='None' name='[none:umidita_media:qk]' pivot='key' type='quantitative' />
+            <column caption='Score Postop' datatype='real' name='[score_postop]' role='measure' type='quantitative' />
+            <column caption='Sesso' datatype='string' name='[sesso]' role='dimension' type='nominal' />
+            <column caption='Umidita Media' datatype='real' name='[umidita_media]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.12q7gcs02gkzi2102swje13xxlzc].[none:sesso:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.12q7gcs02gkzi2102swje13xxlzc].[avg:score_postop:qk]</rows>
+        <cols>[federated.12q7gcs02gkzi2102swje13xxlzc].[none:umidita_media:qk]</cols>
+      </table>
+      <simple-id uuid='{C7EC594A-5174-44A4-B133-2486AED43263}' />
+    </worksheet>
+    <worksheet name='Sheet 3'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='compitino_dataviz_2021_2022' name='federated.1e1uere0e8k21g167pviw01222ft' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1e1uere0e8k21g167pviw01222ft'>
+            <column-instance column='[score_postop]' derivation='Avg' name='[avg:score_postop:qk]' pivot='key' type='quantitative' />
+            <column caption='Nome Modulistica' datatype='string' name='[nome_modulistica]' role='dimension' type='nominal' />
+            <column-instance column='[nome_modulistica]' derivation='None' name='[none:nome_modulistica:nk]' pivot='key' type='nominal' />
+            <column-instance column='[temperatura_media]' derivation='None' name='[none:temperatura_media:qk]' pivot='key' type='quantitative' />
+            <column caption='Score Postop' datatype='real' name='[score_postop]' role='measure' type='quantitative' />
+            <column caption='Temperatura Media' datatype='real' name='[temperatura_media]' role='measure' type='quantitative' />
+            <column-instance column='[score_postop]' derivation='Var' name='[var:score_postop:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1e1uere0e8k21g167pviw01222ft].[none:nome_modulistica:nk]' />
+              <size column='[federated.1e1uere0e8k21g167pviw01222ft].[var:score_postop:qk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1e1uere0e8k21g167pviw01222ft].[avg:score_postop:qk]</rows>
+        <cols>[federated.1e1uere0e8k21g167pviw01222ft].[none:temperatura_media:qk]</cols>
+      </table>
+      <simple-id uuid='{1A15F435-16FB-4350-ADFA-6294028F2CC8}' />
+    </worksheet>
+    <worksheet name='Sheet 3 (2)'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='compitino_dataviz_2021_2022' name='federated.1e1uere0e8k21g167pviw01222ft' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1e1uere0e8k21g167pviw01222ft'>
+            <column-instance column='[score_postop]' derivation='Avg' name='[avg:score_postop:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[score_postop]' derivation='Count' name='[cnt:score_postop:qk]' pivot='key' type='quantitative' />
+            <column caption='Natural Light' datatype='boolean' name='[natural_light]' role='dimension' type='nominal' />
+            <column-instance column='[natural_light]' derivation='None' name='[none:natural_light:nk]' pivot='key' type='nominal' />
+            <column-instance column='[temperatura_media]' derivation='None' name='[none:temperatura_media:qk]' pivot='key' type='quantitative' />
+            <column caption='Score Postop' datatype='real' name='[score_postop]' role='measure' type='quantitative' />
+            <column-instance column='[score_postop]' derivation='Stdev' name='[std:score_postop:qk]' pivot='key' type='quantitative' />
+            <column caption='Temperatura Media' datatype='real' name='[temperatura_media]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1e1uere0e8k21g167pviw01222ft].[none:natural_light:nk]' />
+              <size column='[federated.1e1uere0e8k21g167pviw01222ft].[std:score_postop:qk]' />
+              <lod column='[federated.1e1uere0e8k21g167pviw01222ft].[cnt:score_postop:qk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1e1uere0e8k21g167pviw01222ft].[avg:score_postop:qk]</rows>
+        <cols>[federated.1e1uere0e8k21g167pviw01222ft].[none:temperatura_media:qk]</cols>
+      </table>
+      <simple-id uuid='{25511417-169B-49C0-96FD-EB5A0313E9D4}' />
+    </worksheet>
+    <worksheet name='Sheet 3 (3)'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='compitino_dataviz_2021_2022' name='federated.1e1uere0e8k21g167pviw01222ft' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1e1uere0e8k21g167pviw01222ft'>
+            <column-instance column='[score_postop]' derivation='Count' name='[cnt:score_postop:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[score_postop]' derivation='Median' name='[med:score_postop:qk]' pivot='key' type='quantitative' />
+            <column caption='Nome Modulistica' datatype='string' name='[nome_modulistica]' role='dimension' type='nominal' />
+            <column-instance column='[nome_modulistica]' derivation='None' name='[none:nome_modulistica:nk]' pivot='key' type='nominal' />
+            <column-instance column='[temperatura_media]' derivation='None' name='[none:temperatura_media:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[umidita_media]' derivation='None' name='[none:umidita_media:qk]' pivot='key' type='quantitative' />
+            <column caption='Score Postop' datatype='real' name='[score_postop]' role='measure' type='quantitative' />
+            <column caption='Temperatura Media' datatype='real' name='[temperatura_media]' role='measure' type='quantitative' />
+            <column caption='Umidita Media' datatype='real' name='[umidita_media]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.1e1uere0e8k21g167pviw01222ft].[med:score_postop:qk]' num-steps='6' palette='red_green_diverging_10_0' type='interpolated' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1e1uere0e8k21g167pviw01222ft].[med:score_postop:qk]' />
+              <lod column='[federated.1e1uere0e8k21g167pviw01222ft].[cnt:score_postop:qk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>([federated.1e1uere0e8k21g167pviw01222ft].[none:nome_modulistica:nk] * [federated.1e1uere0e8k21g167pviw01222ft].[none:temperatura_media:qk])</rows>
+        <cols>[federated.1e1uere0e8k21g167pviw01222ft].[none:umidita_media:qk]</cols>
+      </table>
+      <simple-id uuid='{98B8F99A-DC14-4838-AB75-A8730CCA8422}' />
+    </worksheet>
+    <worksheet name='Sheet 3 (4)'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='compitino_dataviz_2021_2022' name='federated.1e1uere0e8k21g167pviw01222ft' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1e1uere0e8k21g167pviw01222ft'>
+            <column-instance column='[score_postop]' derivation='Median' name='[med:score_postop:qk]' pivot='key' type='quantitative' />
+            <column caption='Nome Modulistica' datatype='string' name='[nome_modulistica]' role='dimension' type='nominal' />
+            <column-instance column='[nome_modulistica]' derivation='None' name='[none:nome_modulistica:nk]' pivot='key' type='nominal' />
+            <column-instance column='[temperatura_media]' derivation='None' name='[none:temperatura_media:qk]' pivot='key' type='quantitative' />
+            <column caption='Score Postop' datatype='real' name='[score_postop]' role='measure' type='quantitative' />
+            <column caption='Temperatura Media' datatype='real' name='[temperatura_media]' role='measure' type='quantitative' />
+            <column-instance column='[score_postop]' derivation='Var' name='[var:score_postop:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1e1uere0e8k21g167pviw01222ft].[none:nome_modulistica:nk]' />
+              <size column='[federated.1e1uere0e8k21g167pviw01222ft].[var:score_postop:qk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1e1uere0e8k21g167pviw01222ft].[med:score_postop:qk]</rows>
+        <cols>[federated.1e1uere0e8k21g167pviw01222ft].[none:temperatura_media:qk]</cols>
+      </table>
+      <simple-id uuid='{1DF77E84-7185-4774-A37E-07DDDABB9500}' />
+    </worksheet>
+    <worksheet name='Sheet 3 (5)'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='compitino_dataviz_2021_2022' name='federated.1e1uere0e8k21g167pviw01222ft' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1e1uere0e8k21g167pviw01222ft'>
+            <column-instance column='[score_postop]' derivation='Median' name='[med:score_postop:qk]' pivot='key' type='quantitative' />
+            <column caption='Nome Modulistica' datatype='string' name='[nome_modulistica]' role='dimension' type='nominal' />
+            <column-instance column='[nome_modulistica]' derivation='None' name='[none:nome_modulistica:nk]' pivot='key' type='nominal' />
+            <column-instance column='[temperatura_media]' derivation='None' name='[none:temperatura_media:qk]' pivot='key' type='quantitative' />
+            <column caption='Score Postop' datatype='real' name='[score_postop]' role='measure' type='quantitative' />
+            <column caption='Temperatura Media' datatype='real' name='[temperatura_media]' role='measure' type='quantitative' />
+            <column-instance column='[score_postop]' derivation='Var' name='[var:score_postop:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1e1uere0e8k21g167pviw01222ft].[none:nome_modulistica:nk]' />
+              <size column='[federated.1e1uere0e8k21g167pviw01222ft].[var:score_postop:qk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1e1uere0e8k21g167pviw01222ft].[med:score_postop:qk]</rows>
+        <cols>[federated.1e1uere0e8k21g167pviw01222ft].[none:temperatura_media:qk]</cols>
+      </table>
+      <simple-id uuid='{9149B5EB-28C5-4A5B-B3A0-895199CE522A}' />
+    </worksheet>
+    <worksheet name='Sheet 8'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='dataset_normalizzato_con_differenze' name='federated.15ikgrl0cicze2199zfef1qancuj' />
+          </datasources>
+          <datasource-dependencies datasource='federated.15ikgrl0cicze2199zfef1qancuj'>
+            <column caption='Mental Score Postop' datatype='real' name='[mental_score_postop]' role='measure' type='quantitative' />
+            <column caption='Natural Light' datatype='boolean' name='[natural_light]' role='dimension' type='nominal' />
+            <column-instance column='[mental_score_postop]' derivation='None' name='[none:mental_score_postop:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[natural_light]' derivation='None' name='[none:natural_light:nk]' pivot='key' type='nominal' />
+            <column-instance column='[physical_score_postop]' derivation='None' name='[none:physical_score_postop:qk]' pivot='key' type='quantitative' />
+            <column caption='Physical Score Postop' datatype='real' name='[physical_score_postop]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='5' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.15ikgrl0cicze2199zfef1qancuj].[none:natural_light:nk]' />
+            </encodings>
+            <reference-line axis-column='[federated.15ikgrl0cicze2199zfef1qancuj].[none:physical_score_postop:qk]' enable-instant-analytics='true' formula='median' id='refline10' label-type='automatic' paired-distribution-id='refline9' probability='95' scope='per-table' value-column='[federated.15ikgrl0cicze2199zfef1qancuj].[none:physical_score_postop:qk]' z-order='8' />
+            <reference-line axis-column='[federated.15ikgrl0cicze2199zfef1qancuj].[none:mental_score_postop:qk]' enable-instant-analytics='true' fill-above='false' fill-below='false' formula='medianconfidence' id='refline11' label-type='none' paired-distribution-id='refline12' probability='95' scope='per-table' show-lines='both' symmetric='false' value-column='[federated.15ikgrl0cicze2199zfef1qancuj].[none:mental_score_postop:qk]' z-order='9' />
+            <reference-line axis-column='[federated.15ikgrl0cicze2199zfef1qancuj].[none:mental_score_postop:qk]' enable-instant-analytics='true' formula='median' id='refline12' label-type='automatic' paired-distribution-id='refline11' probability='95' scope='per-table' value-column='[federated.15ikgrl0cicze2199zfef1qancuj].[none:mental_score_postop:qk]' z-order='10' />
+            <reference-line axis-column='[federated.15ikgrl0cicze2199zfef1qancuj].[none:mental_score_postop:qk]' enable-instant-analytics='true' fill-above='false' fill-below='false' formula='confidence' id='refline2' label-type='none' paired-distribution-id='refline3' probability='95' scope='per-table' show-lines='both' symmetric='false' value-column='[federated.15ikgrl0cicze2199zfef1qancuj].[none:mental_score_postop:qk]' z-order='1' />
+            <reference-line axis-column='[federated.15ikgrl0cicze2199zfef1qancuj].[none:mental_score_postop:qk]' enable-instant-analytics='true' formula='average' id='refline3' label-type='automatic' paired-distribution-id='refline2' probability='95' scope='per-table' value-column='[federated.15ikgrl0cicze2199zfef1qancuj].[none:mental_score_postop:qk]' z-order='2' />
+            <reference-line axis-column='[federated.15ikgrl0cicze2199zfef1qancuj].[none:physical_score_postop:qk]' enable-instant-analytics='true' fill-above='false' fill-below='false' formula='confidence' id='refline5' label-type='none' paired-distribution-id='refline6' probability='95' scope='per-table' show-lines='both' symmetric='false' value-column='[federated.15ikgrl0cicze2199zfef1qancuj].[none:physical_score_postop:qk]' z-order='3' />
+            <reference-line axis-column='[federated.15ikgrl0cicze2199zfef1qancuj].[none:physical_score_postop:qk]' enable-instant-analytics='true' formula='average' id='refline6' label-type='automatic' paired-distribution-id='refline5' probability='95' scope='per-table' value-column='[federated.15ikgrl0cicze2199zfef1qancuj].[none:physical_score_postop:qk]' z-order='4' />
+            <reference-line axis-column='[federated.15ikgrl0cicze2199zfef1qancuj].[none:physical_score_postop:qk]' enable-instant-analytics='true' formula='constant' id='refline7' label-type='automatic' scope='per-table' value='50.0' value-column='[federated.15ikgrl0cicze2199zfef1qancuj].[none:physical_score_postop:qk]' z-order='5' />
+            <reference-line axis-column='[federated.15ikgrl0cicze2199zfef1qancuj].[none:mental_score_postop:qk]' enable-instant-analytics='true' formula='constant' id='refline8' label-type='automatic' scope='per-table' value='50.0' value-column='[federated.15ikgrl0cicze2199zfef1qancuj].[none:mental_score_postop:qk]' z-order='6' />
+            <reference-line axis-column='[federated.15ikgrl0cicze2199zfef1qancuj].[none:physical_score_postop:qk]' enable-instant-analytics='true' fill-above='false' fill-below='false' formula='medianconfidence' id='refline9' label-type='none' paired-distribution-id='refline10' probability='95' scope='per-table' show-lines='both' symmetric='false' value-column='[federated.15ikgrl0cicze2199zfef1qancuj].[none:physical_score_postop:qk]' z-order='7' />
+          </pane>
+        </panes>
+        <rows>[federated.15ikgrl0cicze2199zfef1qancuj].[none:mental_score_postop:qk]</rows>
+        <cols>[federated.15ikgrl0cicze2199zfef1qancuj].[none:physical_score_postop:qk]</cols>
+      </table>
+      <simple-id uuid='{19D37E0C-8413-4811-B4C6-7996BA39E0B5}' />
+    </worksheet>
+    <worksheet name='Sheet 8 (2)'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='dataset_normalizzato_con_differenze' name='federated.15ikgrl0cicze2199zfef1qancuj' />
+          </datasources>
+          <datasource-dependencies datasource='federated.15ikgrl0cicze2199zfef1qancuj'>
+            <column caption='Hi &gt; 27' datatype='boolean' name='[HI &gt; 27]' role='dimension' type='nominal' />
+            <column caption='Mental Score Postop' datatype='real' name='[mental_score_postop]' role='measure' type='quantitative' />
+            <column-instance column='[HI &gt; 27]' derivation='None' name='[none:HI &gt; 27:nk]' pivot='key' type='nominal' />
+            <column-instance column='[mental_score_postop]' derivation='None' name='[none:mental_score_postop:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[physical_score_preop]' derivation='None' name='[none:physical_score_preop:qk]' pivot='key' type='quantitative' />
+            <column caption='Physical Score Preop' datatype='real' name='[physical_score_preop]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='5' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.15ikgrl0cicze2199zfef1qancuj].[none:HI &gt; 27:nk]' />
+            </encodings>
+            <reference-line axis-column='[federated.15ikgrl0cicze2199zfef1qancuj].[none:physical_score_preop:qk]' enable-instant-analytics='true' fill-above='false' fill-below='false' formula='confidence' id='refline0' label-type='none' paired-distribution-id='refline1' probability='95' scope='per-table' show-lines='both' symmetric='false' value-column='[federated.15ikgrl0cicze2199zfef1qancuj].[none:physical_score_preop:qk]' z-order='1' />
+            <reference-line axis-column='[federated.15ikgrl0cicze2199zfef1qancuj].[none:physical_score_preop:qk]' enable-instant-analytics='true' formula='average' id='refline1' label-type='automatic' paired-distribution-id='refline0' probability='95' scope='per-table' value-column='[federated.15ikgrl0cicze2199zfef1qancuj].[none:physical_score_preop:qk]' z-order='2' />
+            <reference-line axis-column='[federated.15ikgrl0cicze2199zfef1qancuj].[none:mental_score_postop:qk]' enable-instant-analytics='true' fill-above='false' fill-below='false' formula='confidence' id='refline2' label-type='none' paired-distribution-id='refline3' probability='95' scope='per-table' show-lines='both' symmetric='false' value-column='[federated.15ikgrl0cicze2199zfef1qancuj].[none:mental_score_postop:qk]' z-order='3' />
+            <reference-line axis-column='[federated.15ikgrl0cicze2199zfef1qancuj].[none:mental_score_postop:qk]' enable-instant-analytics='true' formula='average' id='refline3' label-type='automatic' paired-distribution-id='refline2' probability='95' scope='per-table' value-column='[federated.15ikgrl0cicze2199zfef1qancuj].[none:mental_score_postop:qk]' z-order='4' />
+          </pane>
+        </panes>
+        <rows>[federated.15ikgrl0cicze2199zfef1qancuj].[none:mental_score_postop:qk]</rows>
+        <cols>[federated.15ikgrl0cicze2199zfef1qancuj].[none:physical_score_preop:qk]</cols>
+      </table>
+      <simple-id uuid='{B7C6320F-759D-4C0A-B9C2-056F8CABEE95}' />
+    </worksheet>
+    <worksheet name='Sheet 8 (3)'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='dataset_normalizzato_con_differenze' name='federated.15ikgrl0cicze2199zfef1qancuj' />
+          </datasources>
+          <datasource-dependencies datasource='federated.15ikgrl0cicze2199zfef1qancuj'>
+            <column caption='Mental Score Postop' datatype='real' name='[mental_score_postop]' role='measure' type='quantitative' />
+            <column caption='Mental Score Preop' datatype='real' name='[mental_score_preop]' role='measure' type='quantitative' />
+            <column caption='Natural Light' datatype='boolean' name='[natural_light]' role='dimension' type='nominal' />
+            <column-instance column='[mental_score_postop]' derivation='None' name='[none:mental_score_postop:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[mental_score_preop]' derivation='None' name='[none:mental_score_preop:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[natural_light]' derivation='None' name='[none:natural_light:nk]' pivot='key' type='nominal' />
+            <column-instance column='[physical_score_postop]' derivation='None' name='[none:physical_score_postop:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[physical_score_preop]' derivation='None' name='[none:physical_score_preop:qk]' pivot='key' type='quantitative' />
+            <column caption='Physical Score Postop' datatype='real' name='[physical_score_postop]' role='measure' type='quantitative' />
+            <column caption='Physical Score Preop' datatype='real' name='[physical_score_preop]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='6' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.15ikgrl0cicze2199zfef1qancuj].[none:natural_light:nk]' />
+            </encodings>
+            <reference-line axis-column='[federated.15ikgrl0cicze2199zfef1qancuj].[none:physical_score_preop:qk]' enable-instant-analytics='true' fill-above='false' fill-below='false' formula='confidence' id='refline0' label-type='none' paired-distribution-id='refline1' probability='95' scope='per-table' show-lines='both' symmetric='false' value-column='[federated.15ikgrl0cicze2199zfef1qancuj].[none:physical_score_preop:qk]' z-order='1' />
+            <reference-line axis-column='[federated.15ikgrl0cicze2199zfef1qancuj].[none:physical_score_preop:qk]' enable-instant-analytics='true' formula='average' id='refline1' label-type='automatic' paired-distribution-id='refline0' probability='95' scope='per-table' value-column='[federated.15ikgrl0cicze2199zfef1qancuj].[none:physical_score_preop:qk]' z-order='2' />
+            <reference-line axis-column='[federated.15ikgrl0cicze2199zfef1qancuj].[none:physical_score_postop:qk]' enable-instant-analytics='true' formula='median' id='refline10' label-type='automatic' paired-distribution-id='refline9' probability='95' scope='per-table' value-column='[federated.15ikgrl0cicze2199zfef1qancuj].[none:physical_score_postop:qk]' z-order='11' />
+            <reference-line axis-column='[federated.15ikgrl0cicze2199zfef1qancuj].[none:mental_score_postop:qk]' enable-instant-analytics='true' fill-above='false' fill-below='false' formula='medianconfidence' id='refline11' label-type='none' paired-distribution-id='refline12' probability='95' scope='per-table' show-lines='both' symmetric='false' value-column='[federated.15ikgrl0cicze2199zfef1qancuj].[none:mental_score_postop:qk]' z-order='12' />
+            <reference-line axis-column='[federated.15ikgrl0cicze2199zfef1qancuj].[none:mental_score_postop:qk]' enable-instant-analytics='true' formula='median' id='refline12' label-type='automatic' paired-distribution-id='refline11' probability='95' scope='per-table' value-column='[federated.15ikgrl0cicze2199zfef1qancuj].[none:mental_score_postop:qk]' z-order='13' />
+            <reference-line axis-column='[federated.15ikgrl0cicze2199zfef1qancuj].[none:mental_score_postop:qk]' enable-instant-analytics='true' fill-above='false' fill-below='false' formula='confidence' id='refline2' label-type='none' paired-distribution-id='refline3' probability='95' scope='per-table' show-lines='both' symmetric='false' value-column='[federated.15ikgrl0cicze2199zfef1qancuj].[none:mental_score_postop:qk]' z-order='3' />
+            <reference-line axis-column='[federated.15ikgrl0cicze2199zfef1qancuj].[none:mental_score_postop:qk]' enable-instant-analytics='true' formula='average' id='refline3' label-type='automatic' paired-distribution-id='refline2' probability='95' scope='per-table' value-column='[federated.15ikgrl0cicze2199zfef1qancuj].[none:mental_score_postop:qk]' z-order='4' />
+            <reference-line axis-column='[federated.15ikgrl0cicze2199zfef1qancuj].[none:physical_score_preop:qk]' enable-instant-analytics='true' formula='constant' id='refline4' label-type='automatic' scope='per-table' value='13.01' value-column='[federated.15ikgrl0cicze2199zfef1qancuj].[none:physical_score_preop:qk]' z-order='5' />
+            <reference-line axis-column='[federated.15ikgrl0cicze2199zfef1qancuj].[none:physical_score_postop:qk]' enable-instant-analytics='true' fill-above='false' fill-below='false' formula='confidence' id='refline5' label-type='none' paired-distribution-id='refline6' probability='95' scope='per-table' show-lines='both' symmetric='false' value-column='[federated.15ikgrl0cicze2199zfef1qancuj].[none:physical_score_postop:qk]' z-order='6' />
+            <reference-line axis-column='[federated.15ikgrl0cicze2199zfef1qancuj].[none:physical_score_postop:qk]' enable-instant-analytics='true' formula='average' id='refline6' label-type='automatic' paired-distribution-id='refline5' probability='95' scope='per-table' value-column='[federated.15ikgrl0cicze2199zfef1qancuj].[none:physical_score_postop:qk]' z-order='7' />
+            <reference-line axis-column='[federated.15ikgrl0cicze2199zfef1qancuj].[none:physical_score_postop:qk]' enable-instant-analytics='true' formula='constant' id='refline7' label-type='automatic' scope='per-table' value='50.0' value-column='[federated.15ikgrl0cicze2199zfef1qancuj].[none:physical_score_postop:qk]' z-order='8' />
+            <reference-line axis-column='[federated.15ikgrl0cicze2199zfef1qancuj].[none:mental_score_postop:qk]' enable-instant-analytics='true' formula='constant' id='refline8' label-type='automatic' scope='per-table' value='50.0' value-column='[federated.15ikgrl0cicze2199zfef1qancuj].[none:mental_score_postop:qk]' z-order='9' />
+            <reference-line axis-column='[federated.15ikgrl0cicze2199zfef1qancuj].[none:physical_score_postop:qk]' enable-instant-analytics='true' fill-above='false' fill-below='false' formula='medianconfidence' id='refline9' label-type='none' paired-distribution-id='refline10' probability='95' scope='per-table' show-lines='both' symmetric='false' value-column='[federated.15ikgrl0cicze2199zfef1qancuj].[none:physical_score_postop:qk]' z-order='10' />
+          </pane>
+          <pane id='7' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.15ikgrl0cicze2199zfef1qancuj].[none:mental_score_postop:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.15ikgrl0cicze2199zfef1qancuj].[none:natural_light:nk]' />
+            </encodings>
+          </pane>
+          <pane id='8' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.15ikgrl0cicze2199zfef1qancuj].[none:mental_score_preop:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.15ikgrl0cicze2199zfef1qancuj].[none:natural_light:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>([federated.15ikgrl0cicze2199zfef1qancuj].[none:mental_score_postop:qk] + [federated.15ikgrl0cicze2199zfef1qancuj].[none:mental_score_preop:qk])</rows>
+        <cols>([federated.15ikgrl0cicze2199zfef1qancuj].[none:physical_score_postop:qk] + [federated.15ikgrl0cicze2199zfef1qancuj].[none:physical_score_preop:qk])</cols>
+      </table>
+      <simple-id uuid='{4C490BC5-6A02-49F4-84BD-AA4C7B2AE668}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='93'>
+    <window class='worksheet' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='200'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{CA2A5B33-6FF9-425A-A1BB-1F45576464C0}' />
+    </window>
+    <window class='worksheet' name='Sheet 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='200'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='200'>
+            <card pane-specification-id='0' param='[federated.12q7gcs02gkzi2102swje13xxlzc].[none:sesso:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{766DF956-DA99-463B-9FF0-AFCAA01D5CB1}' />
+    </window>
+    <window class='worksheet' name='Sheet 3'>
+      <cards>
+        <edge name='left'>
+          <strip size='200'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='200'>
+            <card pane-specification-id='2' param='[federated.1e1uere0e8k21g167pviw01222ft].[none:nome_modulistica:nk]' type='color' />
+            <card pane-specification-id='2' param='[federated.1e1uere0e8k21g167pviw01222ft].[var:score_postop:qk]' type='size' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{FE9A2665-C3EC-441D-BC30-FCBF109CF62F}' />
+    </window>
+    <window class='worksheet' name='Sheet 3 (4)'>
+      <cards>
+        <edge name='left'>
+          <strip size='200'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='200'>
+            <card pane-specification-id='2' param='[federated.1e1uere0e8k21g167pviw01222ft].[none:nome_modulistica:nk]' type='color' />
+            <card pane-specification-id='2' param='[federated.1e1uere0e8k21g167pviw01222ft].[var:score_postop:qk]' type='size' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{02FF0418-A89B-43DE-9430-15DDCE88DB14}' />
+    </window>
+    <window class='worksheet' name='Sheet 3 (5)'>
+      <cards>
+        <edge name='left'>
+          <strip size='200'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='200'>
+            <card pane-specification-id='2' param='[federated.1e1uere0e8k21g167pviw01222ft].[none:nome_modulistica:nk]' type='color' />
+            <card pane-specification-id='2' param='[federated.1e1uere0e8k21g167pviw01222ft].[var:score_postop:qk]' type='size' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{14759A78-9252-4573-A01E-9A9CC9ADEBE6}' />
+    </window>
+    <window class='worksheet' name='Sheet 3 (2)'>
+      <cards>
+        <edge name='left'>
+          <strip size='200'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='200'>
+            <card pane-specification-id='2' param='[federated.1e1uere0e8k21g167pviw01222ft].[std:score_postop:qk]' type='size' />
+            <card pane-specification-id='2' param='[federated.1e1uere0e8k21g167pviw01222ft].[none:natural_light:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{2795D0C7-F5F3-4105-8D0F-ECD3605A14B1}' />
+    </window>
+    <window class='worksheet' name='Sheet 3 (3)'>
+      <cards>
+        <edge name='left'>
+          <strip size='200'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='200'>
+            <card pane-specification-id='2' param='[federated.1e1uere0e8k21g167pviw01222ft].[med:score_postop:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{263B1FA2-FE24-41FB-9D59-AD15B678E07E}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Sheet 8'>
+      <cards>
+        <edge name='left'>
+          <strip size='200'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='200'>
+            <card pane-specification-id='5' param='[federated.15ikgrl0cicze2199zfef1qancuj].[none:natural_light:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{2DAAAFF6-77BC-4D7F-893E-0249206F8A48}' />
+    </window>
+    <window class='worksheet' name='Sheet 8 (3)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='7' param='[federated.15ikgrl0cicze2199zfef1qancuj].[none:natural_light:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{FA53CCBC-31CC-4EFF-9B5A-5DF7537045D4}' />
+    </window>
+    <window class='worksheet' name='Sheet 8 (2)'>
+      <cards>
+        <edge name='left'>
+          <strip size='200'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='200'>
+            <card pane-specification-id='5' param='[federated.15ikgrl0cicze2199zfef1qancuj].[none:HI &gt; 27:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{7CD9A1B7-2050-475B-A3F3-E1ADF982CD27}' />
+    </window>
+  </windows>
+</workbook>
