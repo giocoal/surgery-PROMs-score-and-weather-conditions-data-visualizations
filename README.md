@@ -3,4 +3,4 @@
 
 Infografica relativa ai PROMS Score e la possibile relazione con le condizioni metereologiche.
 
-https://github.com/giocoal/DataViz_SF12_Score_Matplotlib/blob/main/Consegna_PrimaViz/Compitino_Carbone_Cavallaro.png
+!(https://github.com/giocoal/DataViz_SF12_Score_Matplotlib/blob/main/Consegna_PrimaViz/Compitino_Carbone_Cavallaro.png)
