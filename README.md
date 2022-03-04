@@ -1,2 +1,2 @@
 # DataVisualization2021
-Progetti di Data Visualization
+## Progetto per il corso di Data Visualization
