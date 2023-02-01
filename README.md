@@ -1,4 +1,4 @@
-# DataVisualization2021
+# Data Visualization: PROMs scores after surgery and weather conditions relationship
 
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
@@ -7,7 +7,7 @@
 [![MIT License][license-shield]][license-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
-Infografica relativa ai PROMs Score e la possibile relazione con le condizioni metereologiche nel giorno di compilazione.
+Two inforgraphs made with the matplotlib library about the relationship between PROMs scores after surgery and weather conditions on the day of compilation.
 
 ### First Visualization
 ![](https://github.com/giocoal/DataViz_SF12_Score_Matplotlib/raw/main/Consegna_PrimaViz/Compitino_Carbone_Cavallaro.png)
