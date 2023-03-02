@@ -10,10 +10,10 @@
 Two inforgraphs made with the matplotlib library about the relationship between PROMs scores after surgery and weather conditions on the day of compilation.
 
 ### First Visualization
-![](https://github.com/giocoal/DataViz_SF12_Score_Matplotlib/raw/main/Consegna_PrimaViz/Compitino_Carbone_Cavallaro.png)
+![](https://github.com/giocoal/DataViz_SF12_Score_Matplotlib/raw/main/Viz_ViolinPlot.png)
 
 ### Second Visualization
-![](https://github.com/giocoal/DataViz_SF12_Score_Matplotlib/raw/main/compitino_secondaviz.png)
+![](https://github.com/giocoal/DataViz_SF12_Score_Matplotlib/raw/main/Viz_KDEPlot.png)
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
