@@ -1,4 +1,4 @@
-# Interactive Data Visualization: PROMs scores after surgery and weather conditions relationship
+# Data Visualizations: PROMs scores after surgery and weather conditions relationship
 
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
